@@ -1,4 +1,13 @@
 pandas
 numpy
+flask
+folium
+pandas 
+numpy
+matplotlib
+seaborn
+scikit-learn
+plotly
+branca
 -e .
 
