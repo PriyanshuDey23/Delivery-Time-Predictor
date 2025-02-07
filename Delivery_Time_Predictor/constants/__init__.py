@@ -17,5 +17,15 @@ TRAIN_DATA_DIR_KEY = "train.csv"
 TEST_DATA_DIR_KEY = "test.csv"
 
 
+# Data Transformation related variable
+DATA_TRANSFORMATION_ARTIFACT = "Data_Transformation" # Folder
+DATA_PREPROCCED_DIR = "Processor" # Folder
+DATA_TRANSFORMTION_PROCESSING_OBJ = "Processor.pkl"  # Save inside Processor
+DATA_TRANSFORM_DIR = "Transformation" # Folder
+TRANSFORM_TRAIN_DIR_KEY = "train.csv" 
+TRANSFORM_TEST_DIR_KEY = "test.csv"
+FEATURE_ENGINEERING ="Feature_engg.pkl"
+
+
 
 
