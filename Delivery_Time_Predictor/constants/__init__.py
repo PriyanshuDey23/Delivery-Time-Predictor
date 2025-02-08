@@ -27,5 +27,12 @@ TRANSFORM_TEST_DIR_KEY = "test.csv"
 FEATURE_ENGINEERING ="Feature_engg.pkl"
 
 
+# Model Training related variable
+# Save the model  pickle file
+# model trainer constants 
+MODEL_TRAINER_KEY = 'Model_Trainer' # Folder 
+MODEL_OBJECT = 'model.pkl' # Pickle
+
+
 
 

@@ -7,6 +7,8 @@ from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from Delivery_Time_Predictor.logger import logging
 from Delivery_Time_Predictor.exception import CustomException
+from  Delivery_Time_Predictor.components.data_transformation import DataTransformation
+from Delivery_Time_Predictor.components.model_trainer import ModelTrainer
 
 
 
@@ -22,7 +24,7 @@ class DataIngestion:
         self.data_ingestion_config = DataIngestionConfig() # For calling the class
 
 
-    def iniitiate_data_ingestion(self):
+    def initiate_data_ingestion(self):
         try:
             df = pd.read_csv(DATASET_PATH) # Read the dataset
 
@@ -54,8 +56,26 @@ class DataIngestion:
 
 
 # Run Data Ingestion
+# if __name__ == "__main__":
+#     obj = DataIngestion()
+#     train_data_path,test_data_path=obj.initiate_data_ingestion()
+
+
+# Data Transformation
+# if __name__ == "__main__":
+#     obj = DataIngestion()
+#     train_data_path,test_data_path=obj.initiate_data_ingestion()
+#     data_transformation = DataTransformation()
+#     train_arr,test_arr,_ = data_transformation.inititate_data_transformation(train_data_path,test_data_path)
+
+
+# Model Training 
 if __name__ == "__main__":
-   obj = DataIngestion()
-   train_data, test_data = obj.iniitiate_data_ingestion()
+    obj = DataIngestion()
+    train_data_path,test_data_path=obj.initiate_data_ingestion()
+    data_transformation = DataTransformation()
+    train_arr,test_arr,_ = data_transformation.inititate_data_transformation(train_data_path,test_data_path)
+    model_trainer = ModelTrainer()
+    print(model_trainer.initate_model_training(train_arr,test_arr))
 
 

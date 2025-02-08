@@ -41,4 +41,9 @@ FEATURE_ENGG_OBJ_FILE_PATH = os.path.join(ROOT_DIR, ARTIFACT_DIR_KEY, DATA_TRANS
                                           DATA_PREPROCCED_DIR,FEATURE_ENGINEERING) 
 
 
+# Model Training
+MODEL_FILE_PATH = os.path.join(ROOT_DIR,ARTIFACT_DIR_KEY,
+                               MODEL_TRAINER_KEY,MODEL_OBJECT)
+
+
 
